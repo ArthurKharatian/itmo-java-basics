@@ -136,7 +136,7 @@ public class Main {
         System.out.println(x);
     }
 
-    public static String switcher2 (int number) {
+    public static String switcher2(int number) {
         switch (number) {
             case 10:
                 return "ten";
@@ -147,6 +147,10 @@ public class Main {
             default:
                 return "Illegal number";
         }
+    }
+
+    public void someMethod() {
+        System.out.println("fixed!");
     }
 }
 
