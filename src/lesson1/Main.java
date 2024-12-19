@@ -98,7 +98,6 @@ public class Main {
 //        switcher(10);
 
 //        String result = switcher2(20);
-//
 //        System.out.println(result);
 
         Scanner scanner = new Scanner(System.in);
