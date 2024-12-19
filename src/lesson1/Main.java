@@ -150,7 +150,7 @@ public class Main {
     }
 
     public void someMethod() {
-        System.out.println("fixed!");
+        System.out.println("Hello from github");
     }
 }
 
