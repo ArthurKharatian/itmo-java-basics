@@ -150,7 +150,7 @@ public class Main {
     }
 
     public void someMethod() {
-        //logic
+        System.out.println("fixed!");
     }
 }
 
