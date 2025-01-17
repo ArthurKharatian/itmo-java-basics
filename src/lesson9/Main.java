@@ -159,6 +159,32 @@ public class Main {
 
 //       Map<Color, String> colorStringMap = new EnumMap<>(Color.class);
 
+        List<Car> cars = new ArrayList<>();
+        Car e = new Car();
+        e.setColor(Color.WHITE);
+        cars.add(e);
+        cars.add(new Car());
+
+        for (Car car : cars) {
+            if (car.getColor() == Color.WHITE) {
+                cars.remove(car);
+            }
+        }
+
+        System.out.println(cars);
+
+        List<String> list = new ArrayList<>();
+        list.add("123");
+        list.add("12");
+
+        for (String s : list) {
+            if (s.equals("123")) {
+                list.remove(s);
+            }
+        }
+
+        System.out.println(list);
+
     }
 
     public static void printInfo(Parent parent) {
