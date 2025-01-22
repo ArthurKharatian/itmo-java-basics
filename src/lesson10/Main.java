@@ -3,7 +3,6 @@ package lesson10;
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.text.DecimalFormat;
 import java.util.List;
 
 public class Main {
