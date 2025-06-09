@@ -6,6 +6,6 @@ public class Tasks {
     }
 
     public void taskMethod() {
-        //logic
+        //logic-fixed
     }
 }
