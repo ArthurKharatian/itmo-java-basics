@@ -1,5 +1,7 @@
 package itmo.java.basics.lesson2;
 
+import java.util.Objects;
+
 public class Car {
     private String brand;
     private String model;
@@ -121,5 +123,20 @@ public class Car {
                 ", price=" + price +
                 ", color=" + color +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return doorsCount == car.doorsCount && Objects.equals(brand, car.brand) && Objects.equals(model, car.model) &&
+                Objects.equals(seatPlace, car.seatPlace) && Objects.equals(engineCapacity, car.engineCapacity) &&
+                Objects.equals(isNew, car.isNew) && Objects.equals(price, car.price) && color == car.color;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(brand, model, seatPlace, engineCapacity, isNew, doorsCount, price, color);
     }
 }
